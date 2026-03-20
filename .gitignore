@@ -85,3 +85,5 @@ app.*.map.json
 *.key
 *.pem
 secrets.dart
+.vscode/settings.json
+
