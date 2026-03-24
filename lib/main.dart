@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_test/screens/onboarding_screen.dart';
+import 'package:flutter_application_test/screens/signup_screen.dart';
 import 'package:flutter_application_test/utils/colors.dart';
+import 'package:flutter_application_test/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         OnboardingScreen.routeName: (context) => const OnboardingScreen(),
+        LoginScreen.routeName: (context) => const LoginScreen(),
+        SignupScreen.routeName: (context) => const SignupScreen(),
       },
       home: const OnboardingScreen(),
     );
