@@ -27,6 +27,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
+      routes: {
+        OnboardingScreen.routeName: (context) => const OnboardingScreen(),
+      },
       home: const OnboardingScreen(),
     );
   }
