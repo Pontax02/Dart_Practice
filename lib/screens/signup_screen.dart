@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:flutter_application_test/widgets/custom_button.dart";
 import "package:flutter_application_test/widgets/custom_textfield.dart";
 
 class SignupScreen extends StatefulWidget {
@@ -52,6 +53,12 @@ class _SignupScreenState extends State<SignupScreen> {
                 child: CustomTextField(controller: _passwordcontroller),
               ),
               const SizedBox(height: 20),
+              CustomButton(
+                text: "Sign Up",
+                onTap: () {
+                  // Handle sign up logic here
+                },
+              ),
             ],
           ),
         ),
