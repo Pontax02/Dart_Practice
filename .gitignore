@@ -87,3 +87,7 @@ app.*.map.json
 secrets.dart
 .vscode/settings.json
 
+# ── FIREBASE ──────────────────────────────────────────────────────────────────
+google-services.json
+GoogleService-Info.plist
+
