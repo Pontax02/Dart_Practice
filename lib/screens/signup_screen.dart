@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
+import "package:flutter_application_test/screens/home_screen.dart";
 import "package:flutter_application_test/widgets/custom_button.dart";
 import "package:flutter_application_test/widgets/custom_textfield.dart";
+import 'package:flutter_application_test/resources/auth_methods.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -13,6 +15,24 @@ class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController _emailcontroller = TextEditingController();
   final TextEditingController _passwordcontroller = TextEditingController();
   final TextEditingController _usernamecontroller = TextEditingController();
+  final AuthMethods _authMethods = AuthMethods();
+
+  void SignupUser() async {
+    bool res = await _authMethods.signUpUser(
+      context,
+      _emailcontroller.text,
+      _usernamecontroller.text,
+      _passwordcontroller.text,
+    );
+
+    if (res) {
+      // Navigate to the next screen or show success message
+      Navigator.pushNamed(context, HomeScreen.routeName); // Example navigation
+    } else {
+      // Show error message
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
