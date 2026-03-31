@@ -1,9 +1,0 @@
-{
-  "conventionalCommits.scopes": [
-    ".gitignore",
-    "settings",
-    "main",
-    "Colors"
-  ],
-  "java.configuration.updateBuildConfiguration": "interactive"
-}
