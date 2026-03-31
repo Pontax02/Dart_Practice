@@ -1,12 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import "package:flutter_application_test/models/user.dart" as model;
+import 'package:flutter_application_test/utils/utils.dart';
 
 class AuthMethods {
   final _userRef = FirebaseFirestore.instance.collection("users");
   final _auth = FirebaseAuth.instance;
 
   Future<bool> signUpUser(
+    BuildContext context,
     String email,
     String username,
     String password,
@@ -28,7 +31,7 @@ class AuthMethods {
         res = true;
       }
     } on FirebaseAuthException catch (e) {
-      print(e.message!);
+      showSnackBar(context, e.message!);
     }
     return res;
   }
