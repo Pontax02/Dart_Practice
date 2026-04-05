@@ -58,8 +58,7 @@
 .idea/
 
 # ── VS CODE ───────────────────────────────────────────────────────────────────
-# Descomenta la siguiente línea si no quieres subir la config de VS Code
-#.vscode/
+.vscode/
 
 # ── MISC ──────────────────────────────────────────────────────────────────────
 *.class
@@ -85,3 +84,9 @@ app.*.map.json
 *.key
 *.pem
 secrets.dart
+.vscode/settings.json
+
+# ── FIREBASE ──────────────────────────────────────────────────────────────────
+google-services.json
+GoogleService-Info.plist
+
