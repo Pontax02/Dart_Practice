@@ -6,7 +6,7 @@ class UserProvider extends ChangeNotifier {
 
   User get user => _user;
 
-  setUser(User user) {
+  void setUser(User user) {
     _user = user;
     notifyListeners();
   }
