@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "732138550384",
+    "project_id": "twitch-clone-a7dfe",
+    "storage_bucket": "twitch-clone-a7dfe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732138550384:android:5fbca7e57772135d4470b5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClPhhdmTeOy52sKRo6F9NqcBocFYG8oBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
